@@ -1,0 +1,135 @@
+audio{display:none;}
+body{background-image:url(../img/hometown.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     }
+h1{text-align:center;
+font-size: 100px;
+font-family: "华文行楷";
+}
+a{text-decoration: none;
+}
+#left a:link{color:red;}
+#left a:visited{color:red;}
+#right a:link{color:blue ;}
+#right a:visited{color: blue;}
+h2{text-align: center;
+   font-size: 40px;
+   font-family: "华文隶书";}
+   #left{
+        font-family: "方正姚体";
+        text-align: center;
+        width:800px;
+        height:650px;
+        position: left;
+       
+        display:inline-table;
+   }
+   #right{
+       
+     font-family: "方正姚体";
+     text-align: center;
+     width:800px;
+     height:650px;
+     position: right;
+  
+     display:inline-table;
+     }
+     
+    #sufu{
+
+         font-size: 40px;
+        
+         background-image:url(../img/sufu.jpg);
+         width: 400px;
+         height:250px;
+         display:inline-table;
+         border-radius:100%;
+        
+    }
+    #fsb{
+         font-size: 40px;
+        
+         background-image:url(../img/fsb.jpg);
+         width:400px;
+         height:250px;
+         display:inline-table;
+         border-radius:100%;
+        
+
+    }
+    .center{
+         color: brown;
+         font-family:"方正舒体";
+         font-size: 100px;
+         width:800px;
+         height: 150px;
+         display:inline-table;
+         line-height:150px;
+
+    }
+    #Pepper{
+     font-size: 40px;
+     
+     background-image: url(../img/Pepper.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%; 
+   
+    }
+    #pickles{
+     font-size: 40px;
+    
+     background-image: url(../img/pickles.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%;
+  
+    }
+    #mufu{
+     font-size: 40px;
+     color:blue;
+     background-image:url(../img/mufu.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%;
+   
+
+    }
+    #lianyun{
+     font-size: 40px;
+     color:blue;
+     background-image:url(../img/lianyun.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%;
+   
+
+    }
+    #dufu{
+     font-size: 40px;
+     color:blue;
+     background-image: url(../img/dufu.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%;
+   
+
+    }
+    #shiniu{
+     font-size: 40px;
+     color:blue;
+     background-image: url(../img/shiniu.jpg);
+     width: 400px;
+     height: 250px;
+     display:inline-table;
+     border-radius:100%;
+   
+    }
+    
+    
