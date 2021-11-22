@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loadXMLDoc(){
+
+            //POST方法
+            var keyword=document.getElementById('keyword').value;
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("POST","jiekou.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send('keyword='+keyword);
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>关键词搜素</title>
+</head>
+<body>
+输入您想搜索的关键字:<input type="text" name="keyword" id="keyword">
+<button type="submit" onclick="loadXMLDoc()" >提交</button>
+<br>
+搜索结果为:
+<div id="myDiv"> </div>
+</body>
+</html>
