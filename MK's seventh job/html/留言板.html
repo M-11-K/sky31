@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function loadXMLDoc(){
+
+            //POST方法
+            var ID=document.getElementById('ID').value;
+            var Comment=document.getElementById('Comment').value;
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("POST","add_jiekou.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send('ID='+ID);
+            xmlhttp.send('Comment='+Comment);
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+        }
+        function loadXMLDoc1(){
+
+            //POST方法
+            var ID=document.getElementById('ID').value;
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("POST","delete_jiekou.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send('ID='+ID);
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+        }
+        function loadXMLDoc2(){
+
+            //POST方法
+            var ID=document.getElementById('ID').value;
+            var Comment=document.getElementById('Comment').value;
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("POST","change_jiekou.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send('ID='+ID);
+            xmlhttp.send('Comment='+Comment);
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+</head>
+<body>
+输入你的ID:<input name="ID" type="text">
+在这里留下你想说的话吧:<input name="Comment" type="text">
+<br>
+<button type="submit" onclick="loadXMLDoc()" >提交留言</button>
+<br>
+输入你的id:<input name="ID" type="text">
+<br>
+<button type="submit" onclick="loadXMLDoc1()">删除留言</button>
+输入你的id:<input name="ID" type="text">
+输入你想改成的留言:<input name="Comment" type="text">
+<button type="submit" onclick="loadXMLDoc2()">修改留言</button>
+<br>
+<a href="#" onclick="location.href='show_jiekou.php'">查看留言</a>
+</body>
+</html>
